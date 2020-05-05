@@ -1,0 +1,75 @@
+doctype html
+html
+    script
+        include function.js
+    meta(charset='utf-8')
+    style
+        include view.css
+body
+    header 
+        h1
+            a(href='/' class = 'title') VEGAN FASION
+        ul
+          li(class='category')
+            a(href='/about') ABOUT
+          li(class='category')
+            a(href='/signin') 회원가입
+          li(class='category') 
+            a(href='/') 로그인
+          li(class='category')
+            a(href='/') 마이페이지  
+
+    section
+        nav
+            a(href='/')
+                div(id='logo_image')
+            ul
+                li(class='title_list') WOMEN
+                    ul
+                        li(class='list')
+                            a(href='/w_all') 전체
+                        li(class='list') 
+                            a(href='/w_outer') 아우터
+                        li(class='list') 
+                            a(hrefw='/w_top') 상의
+                        li(class='list') 
+                            a(href='/w_bottom') 하의
+                li(class='title_list') MEN
+                    ul
+                        li(class='list')
+                            a(href='/m_all') 전체
+                        li(class='list') 
+                            a(href='/m_all') 아우터
+                        li(class='list') 
+                            a(href='/m_all') 상의
+                        li(class='list') 
+                            a(href='/m_all') 하의
+        main
+            div(class="main_wrap")
+                div(class="form_wrap")
+                    h2 필수사항
+                    // 임시방편
+                    form(action="/signin" method="post")
+                        ul
+                            li(id="liId")
+                                span(class="id")
+                                    lable(for="Id") 아이디
+                                span(class="input_box")
+                                    input(type="text" id="Id" locale="ko")
+                            li(id="liNm")
+                                span(class="id")
+                                    lable(for="Nm") 이름
+                                span(class="input_box")
+                                    input(type="text" id="Nm" locale="ko")
+                            li(id="liPh")
+                                span(class="id")
+                                    label(for="Ph") 휴대폰 번호
+                                span(class="input_box")
+                                    input(type="text" id="Ph" locale="ko" placeholder="('-' 없이 입력)")
+                            li(id="liPw")
+                                span(class="id")
+                                    lable(for="Pw") 비밀번호
+                                span(class="input_box")
+                                    input(type="text" id="Pw" locale="ko")
+                        input(type="image" id='btn-submit' src='/signin.png' alt='login')
+                            

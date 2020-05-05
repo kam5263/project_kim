@@ -1,0 +1,76 @@
+doctype html
+html
+    meta(charset='utf-8')
+    style
+        include view.css
+    script
+        include dropdown.js
+body
+    header 
+        h1
+            a(href='/' class = 'title') VEGAN FASION
+        ul
+          li(class='category')
+            a(href='/about') ABOUT
+          li(class='category')
+            a(href='/signin') 회원가입
+          li(class='category') 
+            a(href='/') 로그인
+          li(class='category')
+            a(href='/') 마이페이지  
+    section
+        nav
+            a(href='/')
+                div(id='logo_image')
+            ul
+                li(class='title_list') WOMEN
+                    ul
+                        li(class='list')
+                            a(href='/w_all') 전체
+                        li(class='list') 
+                            a(href='/w_outer') 아우터
+                        li(class='list') 
+                            a(href='/w_top') 상의
+                        li(class='list') 
+                            a(href='/w_bottom') 하의
+                li(class='title_list') MEN
+                    ul
+                        li(class='list')
+                            a(href='/m_all') 전체
+                        li(class='list') 
+                            a(href='/m_all') 아우터
+                        li(class='list') 
+                            a(href='/m_all') 상의
+                        li(class='list') 
+                            a(href='/m_all') 하의
+        main(class='item_main')
+            div(class='wrap_item')
+                img(src="/item01.jpg")
+                div(class='wrap_tag')
+                    h1 비건 가죽 자켓
+                    h2 270,000
+                    div(class = 'dropdowns')
+                        a(class = 'dropbtn' href='#') 사이즈
+                            div(id='myDropdown' class='dropdown-content')
+                                a(href='#' class='dropdetails' id='s') S
+                                a(href='#' class='dropdetails' id='m') M
+                                a(href='#' class='dropdetails' id='l') L
+                    div(class='dropdowns') 수량
+                    div(class='regist')
+                        div(id='re1')
+                            input(type='checkbox' id='wish')
+                            label(for="wish")
+                                i
+                                |찜하기 
+                        div(id='re2') 
+                            a(href="#") 공유하기
+            ul(class='item_var')
+                li 상품 정보
+                li 상품 리뷰
+                li 상품 문의
+                li 배송/반품/교환 안내
+            div(class='details')
+                img(src='/item01_info2.jpg')
+                img(src='/item01_info1.jpg')
+                img(src='/item01_info3.jpg')
+                img(src='/item01_info4.jpg')

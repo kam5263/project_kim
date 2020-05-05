@@ -1,0 +1,91 @@
+doctype html
+html
+    meta(charset='utf-8')
+    style
+        include view.css
+    script
+        include imgchange.js
+body
+    header 
+        h1
+            a(href='/' class = 'title') VEGAN FASION
+        ul
+          li(class='category')
+            a(href='/about') ABOUT
+          li(class='category')
+            a(href='/signin') 회원가입
+          li(class='category') 
+            a(href='/') 로그인
+          li(class='category')
+            a(href='/') 마이페이지
+
+    section
+        nav
+            a(href='/')
+                div(id='logo_image')
+            ul
+                li(class='title_list') WOMEN
+                    ul
+                        li(class='list')
+                            a(href='/w_all') 전체
+                        li(class='list') 
+                            a(href='/w_outer') 아우터
+                        li(class='list') 
+                            a(hrefw='/w_top') 상의
+                        li(class='list') 
+                            a(href='/w_bottom') 하의
+                li(class='title_list') MEN
+                    ul
+                        li(class='list')
+                            a(href='/m_all') 전체
+                        li(class='list') 
+                            a(href='/m_all') 아우터
+                        li(class='list') 
+                            a(href='/m_all') 상의
+                        li(class='list') 
+                            a(href='/m_all') 하의
+                a(href='/admin' class='title_list') 관리자
+        main
+            div(id='main_image')
+                input(type='image' class='leftbtn' src='/leftbtn.png')
+                input(type='image' class='rightbtn' src='/rightbtn.png')    
+            p(class='main_p') 인 기 상 품
+            div(class='wrap_item')
+                ul 
+                        li
+                            a(href='/w_outer/item01')
+                                img(src="/item01.jpg")
+                            div(class='info')
+                                span(class='name') 비건 가죽 자켓
+                                span(class='price') 270,000
+                        li
+                            a(href='/w_outer/item01')
+                                img(src="/item02.jpg")
+                            div(class='info')
+                                span(class='name') 비건 가죽 스커트
+                                span(class='price') 773,000
+                        li
+                            a(href='/w_outer/item01')
+                                img(src="/item03.jpg")
+                            div(class='info')
+                                span(class='name') 비건 맨투맨 라운드 후드티
+                                span(class='price') 38,000
+                        li
+                            a(href='/w_outer/item01')
+                                img(src="/item01.jpg")
+                            div(class='info')
+                                span(class='name') 비건 가죽 자켓
+                                span(class='price') 270,000
+                        li
+                            a(href='/w_outer/item01')
+                                img(src="/item02.jpg")
+                            div(class='info')
+                                span(class='name') 비건 가죽 스커트
+                                span(class='price') 773,000
+                        li
+                            a(href='/w_outer/item01')
+                                img(src="/item03.jpg")
+                            div(class='info')
+                                span(class='name') 비건 맨투맨 라운드 후드티
+                                span(class='price') 38,000
+    footer

@@ -1,0 +1,48 @@
+doctype html
+html
+    meta(charset='utf-8')
+    style
+        include view.css
+    script
+        include imgchange.js
+body
+    header 
+        h1
+            a(href='/' class = 'title') VEGAN FASION
+        ul
+          li(class='category')
+            a(href='/about') ABOUT
+          li(class='category')
+            a(href='/signin') 회원가입
+          li(class='category') 
+            a(href='/') 로그인
+          li(class='category')
+            a(href='/') 마이페이지
+
+    section
+        nav
+            a(href='/')
+                div(id='logo_image')
+            ul
+                li(class='title_list') WOMEN
+                    ul
+                        li(class='list')
+                            a(href='/w_all') 전체
+                        li(class='list') 
+                            a(href='/w_outer') 아우터
+                        li(class='list') 
+                            a(hrefw='/w_top') 상의
+                        li(class='list') 
+                            a(href='/w_bottom') 하의
+                li(class='title_list') MEN
+                    ul
+                        li(class='list')
+                            a(href='/m_all') 전체
+                        li(class='list') 
+                            a(href='/m_all') 아우터
+                        li(class='list') 
+                            a(href='/m_all') 상의
+                        li(class='list') 
+                            a(href='/m_all') 하의
+                a(href='/admin' class='title_list') 관리자
+        main
