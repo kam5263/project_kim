@@ -14,7 +14,7 @@
     "express": "^4.17.1",
     "git": "^0.1.5",
     "jade": "^1.11.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.28",
     "mongoose": "^5.9.12",
     "mysql": "^2.18.1",
